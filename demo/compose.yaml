@@ -1,0 +1,6 @@
+services:
+  decawave:
+   build: ..
+   devices:
+    - /dev/ttyS0
+   command:  ros2 launch decawave_driver decawave.launch.py
